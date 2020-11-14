@@ -15,7 +15,7 @@ class CV {
 
     static final String POSITION   = "Java Developer"; // MIDDLE.
     // Skills
-    static       String  ENGLISH   = "Intermediat";
+    static       String  ENGLISH   = "Intermediate";
 
     static List<String> programmingLanguages = List.of(
                                       "Java (Core, Collections, Multithreading, JMX, Streams, Design Patterns)",
@@ -58,9 +58,13 @@ class CV {
                                                   "Link: http://gvabudget.herokuapp.com,\n" +
                                                   "GitHub: https://github.com/mailgva/Budget");}};
 
-    public static void main(String[] args) {printCV();}
+    public static void main(String[] args) {
+        printCV();
+    }
 
-    private static void printCV() {System.out.println(combineData());}
+    private static void printCV() {
+        System.out.println(combineData());
+    }
 
     private static String combineData() {
         int spaceOffset = 26;
@@ -77,11 +81,11 @@ class CV {
         data.append(format("Position", POSITION));
         data.append("\n");
         data.append("Skills\n");
-        data.append("=".repeat(24)+"\n");
+        data.append("=".repeat(24) + "\n");
         data.append(format("English", ENGLISH));
         data.append(format("Programming Languages", String.join(", ", programmingLanguages)));
         data.append(format("Frameworks", "\n" + frameworks.entrySet().stream()
-                .map(e -> String.format("%-"+spaceOffset+"s%s : %s"," ", e.getKey(), e.getValue()))
+                .map(e -> String.format("%-" + spaceOffset + "s%s : %s", " ", e.getKey(), e.getValue()))
                 .sorted(Comparator.comparing(String::valueOf).reversed())
                 .collect(Collectors.joining("\n"))));
         data.append(format("View templates", String.join(", ", viewTemplates)));
@@ -89,11 +93,13 @@ class CV {
         data.append(format("Other", String.join(", ", otherSkills)));
         data.append("\n");
         data.append(format("Java projects", "\n" + javaProjects.entrySet().stream()
-                .map(e -> String.format("%-"+spaceOffset+"s%s : %s"," ", e.getKey(), e.getValue().replace("\n", "\n" + " ".repeat(spaceOffset))) + "\n")
+                .map(e -> String.format("%-" + spaceOffset + "s%s : %s", " ", e.getKey(), e.getValue().replace("\n", "\n" + " ".repeat(spaceOffset))) + "\n")
                 .sorted(Comparator.comparing(String::valueOf))
                 .collect(Collectors.joining("\n"))));
         return data.toString();
     }
 
-    private static String format(String key, String value) {return String.format("%-24s: %s\n", key, value);}
+    private static String format(String key, String value) {
+        return String.format("%-24s: %s\n", key, value);
+    }
 }
