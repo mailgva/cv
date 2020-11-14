@@ -39,7 +39,7 @@ class CV {
     static List<String> otherSkills         = Arrays.asList(
                                       "Git", "Lombok", "JUnit (Hamcrest)", "SLF4J (LogBack)", "Ehcache",
                                       "Json Jackson", "Webjars", "JAX-RS", "JDBC", "Tomcat", "Jersey", "Servlets", "OAuth2", "JSON", "XML",
-                                      "Jenkins", "Heroku", "AWS");
+                                      "Docker", "Jenkins", "Heroku", "AWS");
 
     static Map<String, String> javaProjects = new HashMap<>(){{
                                   put("Calories management",
