@@ -6,7 +6,7 @@ class CV {
     static final String  FULL_NAME = "GORBATENKO VLADIMIR";
     static int           AGE       = 40;
     static final boolean SEX_MALE  = true;
-    static final String  PHOTO_URL = "https://avatars3.githubusercontent.com/u/17594211?s=460&u=e058fbcae45c762feafbc63bd0d287b539ded356&v=4";
+    static final String  PHOTO_URL = "shorturl.at/blAFG";
     static final String  E_MAIL    = "mail.gva@gmail.com";
     static final String  PHONE     = "+380 95 708-14-09";
     static final String  ADDRESS   = "Ukraine, Odessa";
@@ -23,7 +23,8 @@ class CV {
                                      "Delphi", "Visual FoxPro");
 
     static Map<String, String> frameworks   = Map.of(
-                                 "Spring family", "Boot, Data JPA, MVC (REST), Security, Websocket, Profiles, i18n, Test, Some of *Spring Clouds*",
+                                 "Spring family", "Boot, Data JPA, MVC (REST), Security, Websocket, Profiles, "+
+                                                          "i18n, Test, Some of *Spring Clouds*",
                                  "ORM", "Hibernate  (Transactions, Cachable)",
                                  "Build system","Maven");
 
@@ -38,22 +39,25 @@ class CV {
 
     static List<String> otherSkills         = Arrays.asList(
                                      "Git", "Lombok", "JUnit (Hamcrest)", "SLF4J (LogBack)", "Ehcache",
-                                     "Json Jackson", "Webjars", "JAX-RS", "JDBC", "Tomcat", "Jersey", "Servlets", "OAuth2", "JSON", "XML",
-                                     "Docker", "Jenkins", "Heroku", "AWS");
+                                     "Json Jackson", "Webjars", "JAX-RS", "JDBC", "Tomcat", "Jersey", "Servlets",
+                                     "OAuth2", "JSON", "XML", "Docker", "Jenkins", "Heroku", "AWS");
 
     static Map<String, String> javaProjects = new HashMap<>(){{
                                  put("Calories management",
-                                          "Spring (MVC, Data JPA, Security, Validation, Test), Hibernate, Tomcat, PostgreSQL, HSQLDB, i18n, " +
+                                          "Spring (MVC, Data JPA, Security, Validation, Test), Hibernate, Tomcat, " +
+                                                  "PostgreSQL, HSQLDB, i18n, " +
                                                   "REST, Webjars, JSP, jQuery, Bootstrap.\n" +
                                                   "Link: http://gva-caloriesmanagement.herokuapp.com,\n" +
                                                   "GitHub: https://github.com/mailgva/topjava15");
                                  put("Voting system",
-                                         "Spring (Boot, Web, Data JPA (+@Async), Security (+OAuth2), Validation, Test), Hibernate, Lombok, " +
-                                                  "Tomcat, PostgreSQL, H2, i18n, REST, Thymeleaf, Webjars, jQuery, Bootstrap, FileUpload.\n" +
+                                         "Spring (Boot, Web, Data JPA (+@Async), Security (+OAuth2), Validation, Test), "+
+                                                  "Hibernate, Lombok, Tomcat, PostgreSQL, H2, i18n, REST, Thymeleaf, " +
+                                                  "Webjars, jQuery, Bootstrap, FileUpload.\n" +
                                                   "Link: https://gva-votingsystem-boot.herokuapp.com,\n" +
                                                   "GitHub: https://github.com/mailgva/votingsystem_h2_boot");
                                  put("Family budget",
-                                          "Spring (Boot, Web, Data JPA, Security, Validation, Sheduler), MongoDB, GoogleDrive, Lombok, " +
+                                          "Spring (Boot, Web, Data JPA, Security, Validation, Sheduler), MongoDB, " +
+                                                  "GoogleDrive, Lombok, " +
                                                   "Thymeleaf, Webjars, jQuery, Bootstrap, Charts.\n" +
                                                   "Link: http://gvabudget.herokuapp.com,\n" +
                                                   "GitHub: https://github.com/mailgva/Budget");}};
