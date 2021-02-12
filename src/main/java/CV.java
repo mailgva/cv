@@ -10,7 +10,7 @@ class CV {
     static final String  E_MAIL    = "mail.gva@gmail.com";
     static final String  PHONE     = "+380 95 708-14-09";
     static final String  ADDRESS   = "Ukraine, Odessa";
-    static final String  LINKEDIN  = "https://www.linkedin.com/in/владимир-горбатенко-3a689b144/";
+    static final String  LINKEDIN  = "https://www.linkedin.com/in/vladimir-gorbatenko/";
     static final String  GITHUB    = "https://github.com/mailgva";
 
     static final String  POSITION  = "Java Developer"; // MIDDLE.
